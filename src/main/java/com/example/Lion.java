@@ -29,4 +29,8 @@ public class Lion {
     public List<String> getFood() throws Exception {
         return feline.eatMeat();
     }
+
+    public String getPlaceOfLiving() {
+        return "Саванна";
+    }
 }

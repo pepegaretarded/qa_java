@@ -42,4 +42,9 @@ public class LionTest {
 
         assertEquals(Arrays.asList("Животные", "Птицы", "Рыба"), new Lion("Самец", feline).getFood());
     }
+
+    @Test
+    public void getPlaceOfLivingReturnsSavanna() throws Exception {
+        assertEquals("Саванна", new Lion("Самец", mock(Feline.class)).getPlaceOfLiving());
+    }
 }
